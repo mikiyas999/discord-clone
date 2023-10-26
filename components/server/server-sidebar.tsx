@@ -10,6 +10,7 @@ import ServerHeader from "./server-header";
 import ServerSearch from "./server-search";
 import { ServerSection } from "./server-section";
 import ServerChannel from "./server-channel";
+import ServerMember from "./server-member";
 
 interface ServerSidebarProps {
   serverId: string;
@@ -181,6 +182,21 @@ export const ServerSidebar = async ({ serverId }: ServerSidebarProps) => {
                   role={role}
                   server={server}
                 />
+              ))}
+            </div>
+          </div>
+        )}
+        {!!members?.length && (
+          <div className="mb-2">
+            <ServerSection
+              sectionType="members"
+              server={server}
+              role={role}
+              label="Members"
+            />
+            <div className="space-y-[2px]">
+              {members?.map((member) => (
+                <ServerMember key={member.id} server={server} member={member} />
               ))}
             </div>
           </div>
