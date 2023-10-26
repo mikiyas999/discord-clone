@@ -25,7 +25,7 @@ const ServerMember = ({ server, member }: ServerMemberProps) => {
 
   const onClick = () => {
     return router.push(
-      `/api/servers/${params?.serverId}/conversations/${member?.id}`
+      `/servers/${params?.serverId}/conversations/${member?.id}`
     );
   };
   return (
