@@ -50,7 +50,7 @@ export const DeleteMessageModal = () => {
           </DialogTitle>
           <DialogDescription className="text-center text-zinc-500">
             Are you sure you want to do this? <br />
-            The message will be permanently deleted.
+            This message will be permanently deleted.
           </DialogDescription>
         </DialogHeader>
         <DialogFooter className="bg-gray-100 px-6 py-4">
@@ -59,7 +59,7 @@ export const DeleteMessageModal = () => {
               Cancel
             </Button>
             <Button disabled={isLoading} variant="primary" onClick={onClick}>
-              Confirm
+              Delete
             </Button>
           </div>
         </DialogFooter>
