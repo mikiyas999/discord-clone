@@ -47,9 +47,9 @@ export const LeaveServerModal = () => {
           <DialogTitle className="text-2xl text-center font-bold">
             Leave Server
           </DialogTitle>
-          <DialogDescription className="text-center text-zinc-500">
+          <DialogDescription className="text-center text-zinc-400">
             Are you sure you want to leave{" "}
-            <span className="font-semibold text-indigo-500">
+            <span className="font-semibold text-indigo-600">
               {server?.name}
             </span>
             ?
